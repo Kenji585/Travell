@@ -1,0 +1,86 @@
+﻿<html>
+<head>
+    @{
+        ViewBag.Title = "Contact";
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag Love Travel</title>
+
+    <script src="~/Scripts/bootstrap.js"></script>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+
+<div class="mt-5" style="background-color:rgb(129 255 205 / 0.74);" id="contact">
+    <div class="container py-md-1 ">
+        <div class="row py-lg-2 py-sm-4">
+            <div class="col-lg-12">
+                <div class="w3_pvt-contact-top">
+                    <h2>Get in touch </h2>
+                    <ul class="d-flex header-wthreelayouts pt-0 flex-column">
+                        <li>
+                            <span class="fa fa-home" data-blast="color"></span>
+                            <p class="d-inline">828 Sư Vạn Hạnh, Phường 13, Quận 10, TP.HCM</p>
+                        </li>
+                        <li class="my-3">
+                            <span class="fa fa-envelope-open" data-blast="color"></span>
+                            <a href="mailto:example@email.com" class="text-secondary">
+                                contact@huflit.edu.vn
+                            </a>
+                        </li>
+                        <li>
+                            <span class="fa fa-phone" data-blast="color"></span>
+                            <p class="d-inline">(+84 28) 38 632 052</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-12 mt-4">
+                    <!-- register form grid -->
+                    <div class="register-top1">
+                        <form action="#" method="post" class="register-wthree">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-lg-3 pl-lg-0">
+                                        <label>
+                                            Full name
+                                        </label>
+                                        <input class="form-control" type="text" placeholder="A B C" name="email"
+                                               required="" data-blast="borderColor">
+                                    </div>
+                                    <div class="col-lg-3 my-lg-0 my-4">
+                                        <label>
+                                            Email
+                                        </label>
+                                        <input class="form-control" type="email" placeholder="example@email.com"
+                                               name="email" required="" data-blast="borderColor">
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <label>
+                                            Mobile
+                                        </label>
+                                        <input class="form-control" type="text" placeholder="+84 000 111 222" name="email"
+                                               required="" data-blast="borderColor">
+                                    </div>
+                                    <div class="col-lg-3 d-flex align-items-end pr-lg-0 mt-lg-0 mt-5">
+                                        <button type="submit" data-blast="bgColor" class="btn btn-w3_pvt btn-block w-50 text-white font-weight-bold text-uppercase bg-danger mt-4">
+                                            Send
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!--  //register form grid ends here -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- map -->
+<div class="google-map mt-5 ">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4635085474065!2d106.66529475080205!3d10.775767862113694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f9023a3a85d%3A0xdee5c99a7b02feab!2sHuflit!5e0!3m2!1svi!2s!4v1640006787383!5m2!1svi!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+<!--// map-->
+
+<!-- //contact -->
+</html>

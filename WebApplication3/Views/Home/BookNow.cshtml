@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewBag.Title = "BookNow";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<meta name="viewport" content="width=device-width" />
+<title>@ViewBag Love Travel</title>
+
+<script src="~/Scripts/bootstrap.js"></script>
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+<h2 class="title-text">Book Now</h2>
+<section class="home" id="home">
+    <div class="video-container">
+        <video src="~/images/DL.mp4" muted loop autoplay></video>
+    </div>
+    <div class="content">
+        <h1>Travel with us</h1>
+        <div class="form-container">
+            <form action="">
+                <h3>Search your Travel</h3>
+                <span>Location</span>
+                <input type="text" placeholder="Place you want to visit">
+                <span>Members</span>
+                <input type="Number" placeholder="How many people">
+                <span>Arrivals</span>
+                <input type="Date">
+                <span>Leaving</span>
+                <input type="Date">
+                <input class="btn" type="Submit" value="Search">
+            </form>
+        </div>
+    </div>
+</section>

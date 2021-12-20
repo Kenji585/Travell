@@ -1,0 +1,257 @@
+﻿<html>
+<head>
+    @{
+        ViewBag.Title = "Index";
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag Love Travel</title>
+
+    <script src="~/Scripts/bootstrap.js"></script>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+<!--start BookNow-->
+<section class="home" id="home" style="margin-bottom:20px;">
+    <div class="video-container">
+        <video src="~/images/DL.mp4" muted loop autoplay></video>
+    </div>
+    <div class="content">
+        <h1>Travel with us</h1>
+        <div class="form-container">
+            <form action="">
+                <h3>Search your Travel</h3>
+                <span>Location</span>
+                <input type="text" placeholder="Place you want to visit">
+                <span> Members</span>
+                <input type="Number" placeholder="How many people">
+                <span>Arrivals</span>
+                <input type="Date">
+                <span>Leaving</span>
+                <input type="Date">
+                <input class="btn-dark bg-dark mt-3" type="Submit" value="Search">
+            </form>
+        </div>
+    </div>
+</section>
+<!--end BookNow-->
+<!--destination-->
+<div class="title-text">Explore the World</div>
+
+
+<div class="embed-responsive embed-responsive-16by9" style="margin:20px">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xMsiTB-nL7c?start=465"></iframe>
+</div>
+
+<div class="title-text">Lastest News</div>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="blog-item" style="padding-top:5px;">
+                <img src="~/images/News/news-bg-1.jpg" style=" max-width: 550px; max-height: 300px; min-width: 550px; min-height: 300px; margin-left: auto; margin-right: auto; display: block;" />
+
+                <div class="blog-item-content bg-white p-4">
+                    <i class="fa fa-clock-o"></i> 28th January
+                    <h3 class="mt-3 mb-3"><a>@Html.ActionLink("Đà Nẵng là nơi hội tụ nhiều địa điểm du lịch", "News1", "Home")</a></h3>
+                    <p class="mb-4">
+                        Với những điểm du lịch nổi tiếng như Bà Nà Hills,Biển Mỹ Khê...đã thu hút hàng nghìn khách du lịch đến thăm.
+                    </p>
+                    @Html.ActionLink("Đọc thêm", "News1", "Home", new { @class = "btn btn-danger" })
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="blog-item" style="padding-top:5px;">
+                <img src="~/images/News/news-bg-2.jpg" style=" max-width: 550px; max-height: 300px; min-width: 550px; min-height: 300px; margin-left: auto; margin-right: auto; display: block;" />
+
+                <div class="blog-item-content bg-white p-4">
+                    <i class="fa fa-clock-o"></i> 28th January
+                    <h3 class="mt-3 mb-3"><a href="news2.html">Vịnh Hạ Long-Kỳ quan thiên nhiên thế giới</a></h3>
+                    <p class="mb-4">Nổi tiếng các hòn đảo tự nhiên nổi trên mặt nước, các hang động huyền bí như Động Thiên Cung...</p>
+
+                    @Html.ActionLink("Đọc thêm", "News1", "Home", new { @class = "btn btn-danger" })
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-5">
+            <div class="blog-item" style="padding-top:5px;">
+                <img src="~/images/News/news-bg-3.jpg" style=" max-width: 550px; max-height: 300px; min-width: 550px; min-height: 300px; margin-left: auto; margin-right: auto; display: block;" />
+                <div class="blog-item-content bg-white p-4">
+                    <i class="fa fa-clock-o"></i> 28th January
+                    <h3 class="mt-3 mb-3"><a href="news3.html">Về Cần Giờ trải nghiệm bình yên bên rìa thành phố</a></h3>
+                    <p class="mb-4">Còn gì thú vị hơn khi thức dậy trong không gian yên bình, ngắm bình minh cạnh bờ biển và thưởng thức ly cà phê đá ngon tuyệt!</p>
+
+                    @Html.ActionLink("Đọc thêm", "News1", "Home", new { @class = "btn btn-danger" })
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-5">
+            <div class="blog-item" style="padding-top:5px;">
+                <img src="~/images/News/news-bg-4.jpg" style=" max-width: 550px; max-height: 300px; min-width: 550px; min-height: 300px; margin-left: auto; margin-right: auto; display: block;" />
+
+                <div class="blog-item-content bg-white p-4">
+                    <i class="fa fa-clock-o"></i> 28th January
+                    <h3 class="mt-3 mb-3"><a href="news4.html">Đà Lạt "Nàng thơ" trong lòng khách du lịch</a></h3>
+                    <p class="mb-4">Đà Lạt mộng mơ nơi mimosa và ngàn hoa khoe sắc,từ đồi Robin ngắm Hồ Tuyền Lâm,viếng Thiền Viện Trúc Lâm,thăm Dinh Bảo Đại...</p>
+
+                    @Html.ActionLink("Đọc thêm", "News1", "Home", new { @class = "btn btn-danger" })
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--end news-->
+<!--start galley-->
+
+<div class="title-text">Gallery</div>
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
+        <li data-target="#myCarousel" data-slide-to="6"></li>
+    </ol>
+
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="~/images/Slide/1.png" />
+            <div class="carousel-caption">
+                <h3>Xứ sở bạch dương trắng</h3>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="~/images/Slide/2.jpg" />
+            <div class="carousel-caption">
+                <h3>Quảng Trường Đỏ uy nghi ở Nga</h3>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="~/images/Slide/3.jpg" />
+            <div class="carousel-caption">
+                <h3>Merlion Park in Singapore</h3>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/images/Slide/4.jpg" />
+            <div class="carousel-caption">
+                <h3>California</h3>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/images/Slide/5.jpg" />
+            <div class="carousel-caption">
+                <h3>Tháp N Hàn Quốc</h3>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/images/Slide/6.jpg" />
+            <div class="carousel-caption">
+                <h3>Khám phá Bờ Tây nước Mỹ.</h3>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/images/Slide/7.png" />
+            <div class="carousel-caption">
+                <h3>Đài Loan</h3>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+
+<!--end galley-->
+<!--start Contact-->
+<div class="mt-5" style="background-color:rgb(129 255 205 / 0.74);" id="contact">
+    <div class="container py-md-1 ">
+        <div class="row py-lg-2 py-sm-4">
+            <div class="col-lg-12">
+                <div class="w3_pvt-contact-top">
+                    <h2>Get in touch </h2>
+                    <ul class="d-flex header-wthreelayouts pt-0 flex-column">
+                        <li>
+                            <span class="fa fa-home" data-blast="color"></span>
+                            <p class="d-inline">828 Sư Vạn Hạnh, Phường 13, Quận 10, TP.HCM</p>
+                        </li>
+                        <li class="my-3">
+                            <span class="fa fa-envelope-open" data-blast="color"></span>
+                            <a href="mailto:20dh110859@st.huflit.edu.vn" class="text-secondary">
+                                contact@huflit.edu.vn
+                            </a>
+                        </li>
+                        <li>
+                            <span class="fa fa-phone" data-blast="color"></span>
+                            <p class="d-inline">(+84 28) 38 632 052</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-12 mt-4">
+                    <!-- register form grid -->
+                    <div class="register-top1">
+                        <form action="#" method="post" class="register-wthree">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-lg-3 pl-lg-0">
+                                        <label>
+                                            Full name
+                                        </label>
+                                        <input class="form-control" type="text" placeholder="A B C" name="email"
+                                               required="" data-blast="borderColor">
+                                    </div>
+                                    <div class="col-lg-3 my-lg-0 my-4">
+                                        <label>
+                                            Email
+                                        </label>
+                                        <input class="form-control" type="email" placeholder="example@email.com"
+                                               name="email" required="" data-blast="borderColor">
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <label>
+                                            Mobile
+                                        </label>
+                                        <input class="form-control" type="text" placeholder="+84 000 000 000" name="email"
+                                               required="" data-blast="borderColor">
+                                    </div>
+                                    <div class="col-lg-3 d-flex align-items-end pr-lg-0 mt-lg-0 mt-5">
+                                        <button type="submit" data-blast="bgColor" class="btn btn-w3_pvt btn-block w-50 text-white font-weight-bold text-uppercase bg-danger mt-4">
+                                            Send
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!--  //register form grid ends here -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- map -->
+<div class="google-map mt-5 ">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4635085474065!2d106.66529475080205!3d10.775767862113694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f9023a3a85d%3A0xdee5c99a7b02feab!2sHuflit!5e0!3m2!1svi!2s!4v1640006787383!5m2!1svi!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+        </div>
+<!--// map-->
+<!--end Contact-->
+<!--footer-->
+<!--end footer-->
+</html>
+
